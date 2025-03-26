@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+  <form class="p-4 border rounded">
+    <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">How satisfied are you with our service?</label>
+        <select class="form-select" required>
+            <option value="" selected disabled>Choose an option</option>
+            <option value="very-satisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="dissatisfied">Dissatisfied</option>
+            <option value="very-dissatisfied">Very Dissatisfied</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Would you recommend us?</label><br>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="recommend" id="yes" value="yes" required>
+            <label class="form-check-label" for="yes">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="recommend" id="no" value="no" required>
+            <label class="form-check-label" for="no">No</label>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="comments" class="form-label">Any suggestions?</label>
+        <textarea class="form-control" id="comments" rows="3" placeholder="Your comments"></textarea>
+    </div>
+    <button type="submit" class="btn btn-warning w-100">Submit Survey</button>
+</form>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
